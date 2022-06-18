@@ -1,0 +1,323 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@100;200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+}
+
+.nav{
+    display: flex;
+    width: 100%;
+    height: 142px;
+    background: rgb(72, 191, 82);
+}
+
+.nav__container{
+    display: flex;
+    width: 90%;
+    height: 100%;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0 auto;   
+}
+
+.nav__links{
+    display: flex;
+    height: 100%; 
+    flex-wrap: wrap;  
+}
+
+.nav__link{
+    height: 100%;
+    width: 200px;
+    text-decoration: none;
+    text-align: center;
+    align-items: center;
+    font-size: 1.3rem;
+    padding: 30px 0px;
+    line-height: 72px;
+    color: black;
+}
+
+.nav__link--generos{
+    width: 200px;
+    padding: 30px 0;
+}
+
+.nav__link--listaCarrito{
+    position: relative;
+    display: none;
+    font-size: 1rem;
+    width: 650px;
+    right: 250px;
+    top: 30px;
+    background: #fff;
+    color: black;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.nav__tablaCarrito{
+    border-top: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.carrito-row:hover{
+    cursor: pointer;
+}
+
+.nav__link--carrito:hover .nav__link--listaCarrito{
+    display: flex;
+    flex-direction: column;
+    opacity: 1;
+}
+
+.nav__link--listaGeneros{
+    position: relative;
+    display: none;
+    width: 200px;
+    background: steelblue;
+    flex-direction: column;
+    top: 40px;
+}
+
+.nav__link--generos:hover .nav__link--listaGeneros{
+    display: flex;
+    flex-direction: column;
+}
+
+.nav__gen{
+    display:flex;
+    padding: 10px 0;
+    justify-content: center;
+}
+
+.nav__gen:hover{   
+    cursor: pointer;
+    background: rgb(149, 156, 169);
+    transition: all .2s;
+}
+
+.nav__vaciar:hover, .nav__link:hover{
+    background: rgb(140, 143, 174);
+    color: #fff;
+}
+
+.nav__vaciar{
+    display: inline-block;
+    width: 60%;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 1px 0;
+    text-align: center;
+}
+
+.img_carrito{
+    border-radius: 15px;
+}
+
+.borrar-album{
+    background: red;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    padding: 3.5px 10px;
+}
+
+.nav__titulo{
+    font-size: 2rem;
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-image: linear-gradient(rgb(70, 131, 180), rgba(255, 255, 0, 0.606)) , url(/Spotify/imagenes/banner2.png);
+    padding: 0.1px;   
+}
+
+.hero__info{
+    margin-top: calc(50vh - 115px); 
+}
+
+.hero__titulo{
+    margin: 0 auto;
+    text-align: center;
+    font-size: 5rem;
+    color: #fff;
+    line-height: 100px;
+    border-radius: 15px;
+    width: 70%;
+}
+
+.hero__mensaje{
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.5rem;
+    background: black;
+    color: #fff;
+    width: 300px;
+    height: 100px;
+    line-height: 100px;
+    border-radius: 15px;
+    margin-top: 30px; 
+}
+
+.main{
+    width: 100%;
+}
+
+.card{
+    width: 93%;
+    margin: 0 auto;
+    padding: 0.1px;
+}
+
+.card__container{
+    display: flex;
+    justify-content: space-between;
+    align-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.card__item{
+    height: 600px;
+    background-color: #fff;
+    border-radius: 20px;
+    align-content: center;
+    overflow: hidden;
+    box-shadow: 0 10px 30px 10px rgba(150,170,180,0.5);
+}
+
+.card__img{
+    height: 100%;
+    width: 100%;
+}
+
+.card__picture{
+    height: 67%;
+}
+
+.card__info{
+    height: 23%;
+    display: flex;
+    margin-top: 27px;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-left: 10%;
+}
+
+.card__button{
+    background: rgb(90, 65, 205);
+    text-align: center;
+    padding: 10px 10px;
+    margin-right: 47px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+}
+
+.card__item:hover{
+     /* transition: property | duration | timing-function | delay */ 
+    transition: transform 0.2s linear 0s;
+    transform: translateY(-4%);
+    cursor: pointer;
+}
+
+.menu_button{
+    display: none;
+}
+
+.card__button:hover{
+    background: rgb(150, 138, 206);
+}
+
+
+@media screen and (max-width: 1377px){
+    .card__container{
+        justify-content: space-evenly;
+    }
+}
+
+@media screen and (max-width: 1017px){
+
+
+        .nav__container{
+            flex-wrap: wrap;
+            margin-top: 2em;
+            align-items: flex-start;
+            width: 100%;
+        }
+
+        .nav__links{
+            height: 0vh;
+            overflow: hidden;
+            top: 10px;
+            width: 100%;
+            flex-direction: column;
+            text-align: center;
+            margin-top: 2.5em;
+            transition: all 0.8s ease;   
+        }
+
+        .nav__links_activo{
+            display: block;
+            height: 40vh;
+        }
+
+        .menu_button{
+            display: block;
+            width: 3em;
+            height: 40%;
+            cursor: pointer;
+        }
+
+        .nav__link{
+            display: block;
+            width: 100%;
+            color: #fff;
+            height: 4em;
+            line-height: 4em;
+            margin: 0;
+            padding: 0;
+            background: black;
+        }
+
+        .nav__link--generos:hover .nav__link--listaGeneros{
+            width: 100%;
+            height: 100%;
+            top: -25px;
+        }
+
+        .nav__link--carrito:hover .nav__link--listaCarrito{
+            display: none;
+        }
+        
+        .nav__gen{
+            padding: 0;
+            height: 60px;
+            line-height: 60px;
+            background: steelblue;
+        }
+
+
+        
+}
+
+

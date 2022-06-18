@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&family=Poppins:wght@100;200;300;400;500;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Poppins', sans-serif;
+    width: 100%;
+}
+
+.nav__link_lista_carrito{
+    display: flex;
+    font-size: 1rem;
+    width: 100%;
+    right: 250px;
+    top: 30px;
+    background: #fff;
+    color: black;
+    flex-direction: column;
+    border-radius: 10px;
+}
+
+.nav__tabla_carrito{
+    border-top: 1px solid black;
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+}
+
+.carrito-row:hover{
+    cursor: pointer;
+}
+
+.nav__vaciar:hover, .nav__link:hover{
+    background: rgb(140, 143, 174);
+    color: #fff;
+}
+
+.nav__vaciar_mobile{
+    display: flex;
+    width: 60%;
+    height: 50px;
+    text-decoration: none;
+    background-color: black;
+    color: #fff;
+    border-radius: 10px;
+    margin: 15px auto;
+    padding: 1px 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.borrar-album_mobile{
+    background: red;
+    border-radius: 50%;
+    color: #fff;
+    text-decoration: none;
+    padding: 3.5px 10px;
+}
+
+td {
+    text-align: center;
+}
+
+img {
+    border-radius: 15px;
+}
+
+tr{
+    height: 140px;
+}
+

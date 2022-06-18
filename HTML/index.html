@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/Spotify/CSS/estilos.css">
+    <title>Spotify</title>
+</head>
+<body>
+    <header class="header">
+        <nav class="nav" id="nav">
+            <div class="nav__container">
+                <h1 class="nav__titulo">Spotify</h1>   
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="menu_button bi bi-list" viewBox="0 0 16 16">
+                    <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+                  </svg> 
+                <div class="nav__links">
+                    <a href="#" class="nav__link">Inicio</a>
+
+                    <div class="nav__link nav__link--generos">
+                        <a href="#" class="nav__link">Generos</a>
+                        <ul class="nav__link--listaGeneros">
+                            <li class="nav__gen">Regetón</li>
+                            <li class="nav__gen">Hip hop</li>
+                            <li class="nav__gen">Rock</li>
+                            <li class="nav__gen">Rap</li>
+                            <li class="nav__gen">Trap</li>
+                        </ul> 
+                    </div>
+                    
+                    <div class="nav__link nav__link--carrito">
+                        <a href="#" class="nav__link link_carrito">Carrito</a>
+
+                        <div class="nav__link--listaCarrito">
+
+                            <a href="#" class="nav__vaciar">Vaciar</a>
+
+                            <table class="nav__tablaCarrito">                            
+                                <thead>
+                                    <tr>
+                                        <th>Imagen</th>
+                                        <th>Nombre</th>
+                                        <th>Autor</th>
+                                        <th>Cantidad</th>
+                                        <th></th>
+                                    </tr>
+                                </thead>
+                            <tbody></tbody>
+                            </table> 
+
+                        </div>
+                                               
+                    </div>
+
+                    <a href="#" class="nav__link">Amigos</a>
+                </div>
+            </div>
+            
+        </nav>
+        
+    </header>
+    <div class="hero">
+            <div class="hero__info">
+                <h1 class="hero__titulo">Un Verano Sin Ti</h1>
+                <a href="https://www.youtube.com/watch?v=gG2bqgt_6po&ab_channel=STAC10N" class="hero__mensaje" target="_blank">Escuchar ahora</a>
+            </div>
+    </div>
+    <main class="main">
+        <section class="card">
+            <div class="card__container">
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/x100PRE.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">X100PRE</h3>
+                        <p class="card__autor">Autor: Bad Bunny</p>
+                        <p class="card__fecha">Fecha: 2018</p>
+                        <a href="#" class="card__button" data-id="1">Agregar</a>
+                    </div>
+                    
+                </div>
+
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/YHLQMDLG.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">YHLQMDLG</h3>
+                        <p class="card__autor">Autor: Bad Bunny</p>
+                        <p class="card__fecha">Fecha: 2020</p>
+                        <a href="#" class="card__button" data-id="2">Agregar</a>
+                    </div>
+                    
+                </div>
+
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/LasQueNoIbanASalir.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">LAS QUE NO IBAN A SALIR</h3>
+                        <p class="card__autor">Autor: Bad Bunny</p>
+                        <p class="card__fecha">Fecha: 2020</p>
+                        <a href="#" class="card__button" data-id="3">Agregar</a>
+                    </div>
+                    
+                </div>
+
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/ElUltimoTourDelMundo.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">EL ÚLTIMO TOUR DEL MUNDO</h3>
+                        <p class="card__autor">Autor: Bad Bunny</p>
+                        <p class="card__fecha">Fecha: 2020</p>
+                        <a href="#" class="card__button" data-id="4">Agregar</a>
+                    </div>
+                    
+                </div>
+
+                
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/Harry's House.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">Harry's House</h3>
+                        <p class="card__autor">Autor: Harry Styles</p>
+                        <p class="card__fecha">Fecha: 2022</p>
+                        <a href="#" class="card__button" data-id="5">Agregar</a>
+                    </div>
+                    
+                </div>
+
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/Homerun.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">Homerun</h3>
+                        <p class="card__autor">Autor: Paulo Londra</p>
+                        <p class="card__fecha">Fecha: 2019</p>
+                        <a href="#" class="card__button" data-id="6">Agregar</a>
+                    </div>
+                    
+                </div>
+
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/Fine Line.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">Fine Line</h3>
+                        <p class="card__autor">Autor: Harry Styles</p>
+                        <p class="card__fecha">Fecha: 2019</p>
+                        <a href="#" class="card__button" data-id="7">Agregar</a>
+                    </div>
+                    
+                </div>
+
+                <div class="card__item">
+                    <figure class="card__picture">
+                        <img src="/Spotify/imagenes/Scorpion.jpg" class="card__img" alt="">
+                    </figure>
+                    <div class="card__info">
+                        <h3 class="card__titulo-album">Scorpion</h3>
+                        <p class="card__autor">Autor: Drake</p>
+                        <p class="card__fecha">Fecha: 2018</p>
+                        <a href="#" class="card__button" data-id="8">Agregar</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+    </main>
+    <script src="/Spotify/JavaScript/carrito.js"></script>
+    <script src="/Spotify/JavaScript/menu.js"></script>
+</body>
+</html>
