@@ -5,6 +5,10 @@
     box-sizing: border-box;
 }
 
+:root{
+    --main_color: rgb(72, 191, 82);
+}
+
 body{
     font-family: 'Poppins', sans-serif;
 }
@@ -13,7 +17,7 @@ body{
     display: flex;
     width: 100%;
     height: 142px;
-    background: rgb(72, 191, 82);
+    background: var(--main_color);
 }
 
 .nav__container{
@@ -248,6 +252,40 @@ body{
     background: rgb(150, 138, 206);
 }
 
+.footer{
+    background: var(--main_color);
+    margin-top: 3em;
+    height: 15em;
+}
+
+.footer__container{
+    display: flex;
+    margin: 0 auto;
+    width: 90%;
+    height: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.footer__parrafo{
+    text-align: center;
+}
+
+.footer__contacto_container{
+    width: 20%;
+}
+
+.footer__logos_container{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 2em;
+    flex-wrap: wrap;
+}
+
+.footer__img{
+    width: 3em;
+}
 
 @media screen and (max-width: 1377px){
     .card__container{
@@ -316,8 +354,10 @@ body{
             background: steelblue;
         }
 
-
-        
+        .footer{
+            height: 25em;
+        }
+    
 }
 
 
