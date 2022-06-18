@@ -244,6 +244,10 @@ body{
     cursor: pointer;
 }
 
+.card__item:not(:hover){
+    transition: transform 0.2s linear 0s;
+}
+
 .menu_button{
     display: none;
 }

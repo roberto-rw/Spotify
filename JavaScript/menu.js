@@ -10,14 +10,13 @@ function cargarEventsListeners(){
     button.addEventListener('click', desplegarMenu);
 }
 
-
 function desplegarMenu(){
     nav.classList.toggle('nav__links_activo');
     agregarLinkCarrito();
 }
 
 function agregarLinkCarrito(){
-    linkCarrito.href = "carrito_mobile.html";
+    linkCarrito.href = "/HTML/carrito_mobile.html";
     console.log(linkCarrito);
 }
 
