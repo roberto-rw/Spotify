@@ -14,12 +14,13 @@ function cargarEventsListeners(){
     //Elimina albums del carrito
     carrito.addEventListener('click', eliminarAlbum);
 
-    //Muestra los cursos de Local Storage
+    //Muestra los albumes de Local Storage
     document.addEventListener('DOMContentLoaded', () => {
-        arregloCarrito = JSON.parse(localStorage.getItem('carrito') || []);
+        arregloCarrito = JSON.parse(localStorage.getItem('carrito')) || [];
         carritoHTML(); //Para que imprima lo que tenemos en Local Storage
     })
 
+    //Vaciamos el carrito de compras
     vaciarCarritoButton.addEventListener('click', () => {
         arregloCarrito = []; //Reseteamos el carrito
         localStorage.clear(); //Reseteamos el Local Storage
@@ -87,7 +88,6 @@ function leerDatosAlbum(album){
     }else{
         arregloCarrito = [...arregloCarrito, infoAlbum];
     }
-    console.log(arregloCarrito);
     carritoHTML();
 }
 

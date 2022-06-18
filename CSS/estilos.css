@@ -7,6 +7,7 @@
 
 :root{
     --main_color: rgb(72, 191, 82);
+    --hover_color: rgb(140, 143, 174);
 }
 
 body{
@@ -104,12 +105,12 @@ body{
 
 .nav__gen:hover{   
     cursor: pointer;
-    background: rgb(149, 156, 169);
+    background: var(--hover_color);
     transition: all .2s;
 }
 
 .nav__vaciar:hover, .nav__link:hover{
-    background: rgb(140, 143, 174);
+    background: var(--hover_color);
     color: #fff;
 }
 
@@ -253,7 +254,7 @@ body{
 }
 
 .card__button:hover{
-    background: rgb(150, 138, 206);
+    background: var(--hover_color);
 }
 
 .footer{

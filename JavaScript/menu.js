@@ -17,7 +17,6 @@ function desplegarMenu(){
 
 function agregarLinkCarrito(){
     linkCarrito.href = "/HTML/carrito_mobile.html";
-    console.log(linkCarrito);
 }
 
 function bloquearTablaCarrito(){

@@ -1,16 +1,25 @@
 let carritoMob = JSON.parse(localStorage.getItem('carrito'));
 const listaCarritoMob = document.querySelector('.nav__link_lista_carrito tbody')
 const carritoContenedor = document.querySelector(".nav__link_carrito");
+const vaciarCarritoButtonMob = document.querySelector('.nav__vaciar_mobile');
 
 console.log(carritoMob);
 
 cargarEventsListenersMob();
 
 function cargarEventsListenersMob(){
+
+    //Cargamos el HTML del carrito
     carritoHTMLMob();
 
-    //Elimina albums del carrito
+    //Elimina albumes del carrito
     carritoContenedor.addEventListener('click', eliminarAlbumMob);
+
+    //Vaciamos el carrito de compras
+    vaciarCarritoButtonMob.addEventListener('click', () => {
+        localStorage.clear(); //Reseteamos el Local Storage
+        limpiarHTMLMob(); //Eliminamos todo el HTML
+    })
 }
 
 
