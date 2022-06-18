@@ -278,6 +278,8 @@ body{
 
 .footer__contacto_container{
     width: 20%;
+    display: flex;
+    flex-direction: column;
 }
 
 .footer__logos_container{
@@ -298,7 +300,6 @@ body{
 }
 
 @media screen and (max-width: 1017px){
-
 
         .nav__container{
             flex-wrap: wrap;
@@ -360,8 +361,15 @@ body{
 
         .footer{
             height: 25em;
-        }
-    
+        }  
+}
+
+@media screen and (max-width: 700px){
+
+    .footer__contacto_container{
+        width: 80%;
+    }
+
 }
 
 
