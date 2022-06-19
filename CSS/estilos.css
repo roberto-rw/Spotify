@@ -24,53 +24,55 @@ body{
 .nav__container{
     display: flex;
     width: 90%;
-    height: 100%;
-    justify-content: space-around;
+
+    justify-content: space-between;
     align-items: center;
     margin: 0 auto;   
 }
 
 .nav__links{
     display: flex;
+    flex-wrap: wrap; 
     height: 100%; 
-    flex-wrap: wrap;  
 }
 
 .nav__link{
-    height: 100%;
-    width: 200px;
+    width: 10em;
     text-decoration: none;
     text-align: center;
-    align-items: center;
     font-size: 1.3rem;
-    padding: 30px 0px;
-    line-height: 72px;
+    line-height: 142px;
     color: black;
+    height: 100%;
 }
-
-.nav__link--generos{
-    width: 200px;
-    padding: 30px 0;
+.nav__link--carrito{
+    position: relative;
 }
 
 .nav__link--listaCarrito{
-    position: relative;
-    display: none;
+    position: absolute;
     font-size: 1rem;
-    width: 650px;
-    right: 250px;
-    top: 30px;
+    width: 40em;
     background: #fff;
     color: black;
-    flex-direction: column;
     border-radius: 10px;
+    left: -13.5em;
+    visibility: hidden;
 }
 
 .nav__tablaCarrito{
-    border-top: 1px solid black;
+    border-top: 1px solid black;;
     width: 90%;
     margin: 0 auto;
     border-collapse: collapse;
+}
+
+tr{
+    line-height: 4rem;
+}
+
+td{
+    line-height: 3rem;
 }
 
 .carrito-row:hover{
@@ -78,29 +80,32 @@ body{
 }
 
 .nav__link--carrito:hover .nav__link--listaCarrito{
-    display: flex;
-    flex-direction: column;
-    opacity: 1;
+    visibility: visible;
+}
+
+.nav__link--generos{
+    position: relative;
 }
 
 .nav__link--listaGeneros{
-    position: relative;
-    display: none;
-    width: 200px;
+    position: absolute;
     background: steelblue;
     flex-direction: column;
-    top: 40px;
+    visibility: hidden;
+    list-style: none;
+    top: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .nav__link--generos:hover .nav__link--listaGeneros{
-    display: flex;
-    flex-direction: column;
+    visibility: visible;
 }
 
 .nav__gen{
-    display:flex;
-    padding: 10px 0;
-    justify-content: center;
+    height: 3em;
+    line-height: 3em;
+    color: #fff;
 }
 
 .nav__gen:hover{   
@@ -111,19 +116,19 @@ body{
 
 .nav__vaciar:hover, .nav__link:hover{
     background: var(--hover_color);
-    color: #fff;
 }
 
 .nav__vaciar{
-    display: inline-block;
+    display: block;
+    margin: 1em auto;
     width: 60%;
     text-decoration: none;
     background-color: black;
     color: #fff;
-    border-radius: 10px;
-    margin: 15px auto;
-    padding: 1px 0;
+    border-radius: 10px; 
     text-align: center;
+    height: 3.5em;
+    line-height: 3.5em;
 }
 
 .img_carrito{
@@ -305,11 +310,13 @@ body{
         .nav__container{
             flex-wrap: wrap;
             margin-top: 2em;
-            align-items: flex-start;
+            justify-content: space-around;
+            align-items: center;
             width: 100%;
         }
 
         .nav__links{
+            display: block;
             height: 0vh;
             overflow: hidden;
             top: 10px;
@@ -317,16 +324,16 @@ body{
             flex-direction: column;
             text-align: center;
             margin-top: 2.5em;
-            transition: all 0.8s ease;   
+            transition: all .7s ease;   
+            z-index: 1;
         }
 
         .nav__links_activo{
-            display: block;
-            height: 40vh;
+            height: 100vh;
         }
 
         .menu_button{
-            display: block;
+            display: flex;
             width: 3em;
             height: 40%;
             cursor: pointer;
@@ -338,27 +345,26 @@ body{
             color: #fff;
             height: 4em;
             line-height: 4em;
-            margin: 0;
-            padding: 0;
             background: black;
-        }
-
-        .nav__link--generos:hover .nav__link--listaGeneros{
-            width: 100%;
-            height: 100%;
-            top: -25px;
         }
 
         .nav__link--carrito:hover .nav__link--listaCarrito{
             display: none;
         }
-        
+
+        /* .nav__link--generos:hover .nav__link--listaGeneros{
+            display: flex;
+            width: 100%; 
+            height: 100%;
+            top: -25px;
+        }
+
         .nav__gen{
             padding: 0;
             height: 60px;
             line-height: 60px;
             background: steelblue;
-        }
+        } */
 
         .footer{
             height: 25em;
